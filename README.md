@@ -1,7 +1,9 @@
-Portfolio: setup and mobile version skeleton 
+Portfolio 
 My second microverse project.
 
-Built With HTML & CSS Visual studio code
+Built With
+HTML & CSS 
+Visual studio code
 
 Authors 👤 
 Imran Belete 
