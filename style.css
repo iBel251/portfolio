@@ -113,11 +113,15 @@
 
 .icons {
   display: flex;
-  width: 200px;
+  width: 180px;
   align-self: flex-start;
   justify-content: space-between;
   flex: none;
   order: 2;
   flex-grow: 0;
   margin: 12px 30px;
+}
+
+.icons svg:hover{
+  cursor: pointer;
 }
