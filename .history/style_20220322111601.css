@@ -417,9 +417,6 @@ margin: 120px 24px 15px 24px;
 }
 
 .form{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-top: 73px;
   list-style-type: none;
   align-self: start;
@@ -452,27 +449,9 @@ font-style: normal;
 font-weight: 400;
 font-size: 15px;
 line-height: 24px;
-margin-left: 16px;
+margin-left: 8px;
 height: 114px;
 width: 327px;
 padding-left: 15px;
 padding-top: 15px;
-}
-
-.form button {
-  font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 17px;
-line-height: 24px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.03em;
-color: #fff;
-background: #FF6B00;
-width:131px;
-height: 48px;
-border: none;
-padding-left: 12px;
 }

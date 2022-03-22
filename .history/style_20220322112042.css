@@ -417,9 +417,6 @@ margin: 120px 24px 15px 24px;
 }
 
 .form{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-top: 73px;
   list-style-type: none;
   align-self: start;
@@ -474,5 +471,4 @@ background: #FF6B00;
 width:131px;
 height: 48px;
 border: none;
-padding-left: 12px;
 }
