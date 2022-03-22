@@ -340,7 +340,7 @@
 }
 
 .skills{
-  display: flex;
+  float: left;
   flex-direction: column;
   align-items: center;
 }
@@ -351,7 +351,7 @@
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  display: flex;
+  float: left;
   text-align: center;
   color: #FFF;
   min-width: 150px;
@@ -363,7 +363,9 @@
   font-weight: 400;
   font-size: 22px;
   margin: 10px 0;
-  display: inline-block;
+  float: left;
+  clear: both;
+  list-style-type: none;
   text-align: center;
   color: #FFF;
   width: 200px;
