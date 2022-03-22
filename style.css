@@ -108,7 +108,7 @@
 }
 
 .icons {
-  display: flex;
+  
   width: 180px;
   align-self: flex-start;
   justify-content: space-between;
@@ -118,6 +118,11 @@
   margin: 12px 30px;
   list-style-type: none;
   padding-left: 10px;
+}
+
+.icons li {
+    float: left;
+    margin-right: 12px;
 }
 
 .icons svg:hover{
@@ -376,6 +381,7 @@
 }
 
 #diamond{
+  float: left;
   width: 18px;
   height: 18px;
   background: #FF6B00;
@@ -385,6 +391,7 @@
 }
 
 #rectangle{
+  float: left;
   width: 18px;
   height: 18px;  
   background: #FF6B00;
@@ -393,6 +400,7 @@
 }
 
 #circle{
+  float: left;
   width: 18px;
   height: 18px;
   background: #FF6B00;
