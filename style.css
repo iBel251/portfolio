@@ -108,7 +108,6 @@
 }
 
 .icons {
-  
   width: 180px;
   align-self: flex-start;
   justify-content: space-between;
@@ -217,11 +216,11 @@
 }
 
 .card1-btn{
-  display: flex;
   padding-left: 0;
 }
 
 .card1-btn li{
+  float: left;
   background-color: white;
   padding: 10px 12px;
   margin-right: 5px;
@@ -256,12 +255,12 @@
 }
 
 .card-btn{
-  display: flex;
   padding-left: 0;
   margin-left: 25px;
 }
 
 .card-btn li{
+  float: left;
   background: rgb(255 255 255/ 24%);
   padding: 10px 12px;
   margin-right: 10px;
