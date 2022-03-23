@@ -195,7 +195,7 @@
   justify-content: center;
 }
 
-#card1btn{
+.card1btn{
   background: #FF6B00;
   width: 124px;
   height: 48px;
@@ -313,7 +313,7 @@
   color: #F4F5F7;
 }
 
-#card2btn{
+.card2btn{
   background: #FF6B00;
   width: 161px;
   height: 48px;
@@ -504,4 +504,14 @@
   border-radius: 10px;
   align-self: center;
   margin-left: 115px;
+}
+
+button:hover{
+  background-color: red;
+  color: black;
+}
+
+button:active{
+  background-color: orange;
+  color: black;
 }
