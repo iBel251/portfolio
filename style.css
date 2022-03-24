@@ -1,3 +1,7 @@
+body{
+  margin: 0;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -5,6 +9,10 @@
   position: relative;
   height: 50px;
   background: #3c3a39;
+}
+
+.full-menu{
+  display: none;
 }
 
 .logo {
