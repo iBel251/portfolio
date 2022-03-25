@@ -481,10 +481,7 @@ img:hover{
   width: 327px;
   padding-left: 15px;
   padding-top: 15px;
-}
-
-.form textarea {
-  transform: translate(10px); 
+  transform: translate(10px);
 }
 
 .form button {
