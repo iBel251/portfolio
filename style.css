@@ -33,6 +33,8 @@ img:hover{
   left: 12px;
   top: 25%;
   color: white;
+  transform: rotate(360deg); 
+  transition-duration: 1500ms;
 }
 
 .menu-btn {
@@ -430,6 +432,10 @@ img:hover{
   color: #172B4D;
 }
 
+.contact-me:hover {
+  transform: translate(10px); 
+}
+
 .form{
   display: flex;
   flex-direction: column;
@@ -458,6 +464,10 @@ img:hover{
   padding-left: 15px;
 }
 
+.form input:hover {
+  transform: translate(10px); 
+}
+
 .form textarea {
   background: #FBF8F7;
   border: none;
@@ -471,6 +481,10 @@ img:hover{
   width: 327px;
   padding-left: 15px;
   padding-top: 15px;
+}
+
+.form textarea {
+  transform: translate(10px); 
 }
 
 .form button {
