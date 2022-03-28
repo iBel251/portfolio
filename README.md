@@ -10,10 +10,10 @@
 
 👤 **Author1**:- **Imran Belete**
 
-- GitHub: [@ibel251](https://github.com/githubhandle)
-- Twitter: [@ImranBel251](https://twitter.com/twitterhandle)
-- LinkedIn: [ibbimran7@gmail.com](https://linkedin.com/in/linkedinhandle)
-- Website: https://ibel251.github.io/portfolio/
+- GitHub : [@ibel251](https://github.com/githubhandle)
+- Twitter : [@ImranBel251](https://twitter.com/twitterhandle)
+- LinkedIn : [ibbimran7@gmail.com](https://linkedin.com/in/linkedinhandle)
+- Website : https://ibel251.github.io/portfolio/
 
 
 ## 🤝 Contributing
