@@ -2,6 +2,10 @@ body{
   margin: 0;
 }
 
+a{
+  text-decoration: none;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -34,12 +38,13 @@ body{
   position: relative;
   top: 10%;
   right: 30px;
+  height: fit-content;
 }
 
 .menu {
   width: 35px;
-  height: 5px;
-  background-color: white;
+  height: 25px;
+  background-image: url("menu.png");
   margin: 6px 0;
 }
 
