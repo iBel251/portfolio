@@ -6,6 +6,11 @@ a{
   text-decoration: none;
 }
 
+img:hover{
+  transform: scale(1.1);
+  transition: 1000ms;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -32,6 +37,8 @@ a{
   left: 12px;
   top: 25%;
   color: white;
+  transform: rotate(360deg); 
+  transition-duration: 1500ms;
 }
 
 .menu-btn {
@@ -430,6 +437,10 @@ a{
   color: #172B4D;
 }
 
+.contact-me:hover {
+  transform: translate(10px); 
+}
+
 .form{
   display: flex;
   flex-direction: column;
@@ -458,6 +469,10 @@ a{
   padding-left: 15px;
 }
 
+.form input:hover {
+  transform: translate(10px); 
+}
+
 .form textarea {
   background: #FBF8F7;
   border: none;
@@ -471,6 +486,7 @@ a{
   width: 327px;
   padding-left: 15px;
   padding-top: 15px;
+  transform: translate(10px);
 }
 
 .form button {
@@ -489,6 +505,7 @@ a{
   height: 48px;
   border: none;
   padding-left: 12px;
+  transition: background-color 1000ms, color 1000ms;
 }
 
 .contact-icons{
