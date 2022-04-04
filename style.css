@@ -546,3 +546,72 @@ button:active{
   background-color: orange;
   color: black;
 }
+
+/* style dropdown menu (Activated on humbergur button pressd) */
+
+.open-menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  height: 90vh;
+}
+
+.menu-btn.open .menu{
+  position: static;
+  background-image: url("closemenu.png");
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center; 
+  }
+
+  .open-menu .menu-btn{
+    display: flex;
+    justify-content: flex-end;
+    position: static;
+    order: -1;
+    padding-right: 30px;
+  }
+
+  .open-menu .full-menu{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .open-menu .logo{
+    display: none;
+  }
+
+  .open-menu li{
+    border-bottom: 0.5px solid white;
+    padding: 0;
+    margin-top: 20px;
+    width: 90vw;
+    list-style-type: none;
+  }
+
+  .open-menu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .open-menu a{
+    font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #FFF5E1;
+  margin-left: 20px;
+  }
+  
+  .open-menu ul :nth-child(4){
+    display: none;
+  }
