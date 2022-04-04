@@ -13,13 +13,13 @@ menubtn.addEventListener('click', () => {
     menuOpen = false;
   }
 });
-
-for (let i = 0; i < 3; i++) {
-  navBtns[i].addEventListener('click', () => {
-    if (menuOpen) {
-      menubtn.classList.remove('open');
-      fullMenu.classList.remove('open-menu');
-      menuOpen = false;
-    }
-  });
+const a = function closeMenu() {
+  if (menuOpen) {
+    menubtn.classList.remove('open');
+    fullMenu.classList.remove('open-menu');
+    menuOpen = false;
+  }
+};
+for (let i = 0; i < 3; i += 1) {
+  navBtns[i].addEventListener('click', a());
 }
