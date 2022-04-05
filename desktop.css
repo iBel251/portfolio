@@ -3,6 +3,10 @@ body{
     padding: 0;
 }
 
+.no-scroll{
+    overflow: auto;
+}
+
 .header{
     width: auto;
     padding-right: 110px;
