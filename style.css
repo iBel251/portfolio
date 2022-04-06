@@ -1,6 +1,7 @@
 body{
   margin: 0;
   max-width: 100%;
+  box-sizing: border-box;
 }
 
 .no-scroll{
@@ -212,7 +213,6 @@ img:hover{
 .card{
   width: 327px;
   height: 386px;
-  background-image: url("card_background.png");
   background-size: contain;
   display: flex;
   flex-direction: column;
@@ -622,3 +622,60 @@ button:active{
   .open-menu ul :nth-child(4){
     display: none;
   }
+
+  /* Style cards rendered from script.js */
+
+  .card-new{
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
+
+  /* modal(popup) styling */
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  backdrop-filter: blur(0);
+}
+
+.modal-container.active-modal {
+  pointer-events: all;
+  transition: backdrop-filter 1s ease-in-out;
+  backdrop-filter: blur(5px) brightness(50%);
+}
+
+.modal {
+  pointer-events: all;
+  transition: transform 1s ease-out;
+  transform: translateY(-400vh);
+  width: 87.5vw;
+  padding: 5vw;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-container.active-modal .modal {
+  transform: translateY(0);
+}
+
+.close-modal{
+  position: absolute;
+  top: 38px;
+  right: 38px;
+  border: none;
+  background: white;
+  font-size: 22px;
+  font-weight: 100;
+}
+
+.modal-img{
+  max-width: 150px;
+}

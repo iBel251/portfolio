@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .no-scroll{
@@ -195,14 +196,19 @@ body{
     background-image: url("background-new2.png");
 }
 
-.card-new3{
-    background-image: url("background-new3.png");
+.card-new{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 435px;
 }
 
-.card-new2 button,
-.card-new3 button,
-.card-new4 button {
+.card-new button {
     display: none;
+}
+
+.card-new:hover button{
+    display: block;
 }
 
 .about {
