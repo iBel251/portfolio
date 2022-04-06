@@ -80,14 +80,14 @@ const projects = [
     technologies: ['html', 'bootstrap', 'Ruby'],
     demoLink: '',
     srcLink: '#',
-  }
+  },
 ];
 
-  function renderCards(i) {
-    const div = document.createElement('div');
-    div.className = 'card-new';
-    div.className = 'card';
-    div.innerHTML = `<div class="card-new">
+function renderCards(i) {
+  const div = document.createElement('div');
+  div.className = 'card-new';
+  div.className = 'card';
+  div.innerHTML = `<div class="card-new">
           <div class="card-content">
             <h1 class="card-title">${projects[i].name}</h1>
             <p class="txt-white">${projects[i].description}</p>
@@ -99,13 +99,14 @@ const projects = [
               See Project
             </button>
           </div>`;
-    div.querySelector('.card-new').style.backgroundImage = `url("${projects[i].imageUrl}")`;
-    document.querySelector('.works').appendChild(div);
-  }
+  div.querySelector('.card-new').style.backgroundImage = `url("${projects[i].imageUrl}")`;
+  document.querySelector('.works').appendChild(div);
+}
 
 function closePopup() {
   const target = document.querySelector('.modal-container');
   target.classList.remove('active-modal');
+  document.body.classList.toggle('no-scroll-desktop');
 }
 
 function openPopup(i) {
@@ -114,11 +115,17 @@ function openPopup(i) {
   target.querySelector('.modal-title').textContent = projects[i].name;
   target.querySelector('.modal-text').textContent = projects[i].description;
   target.querySelector('.modal-img').src = projects[i].imageUrl;
-  target.querySelector('.technologies-used-list').innerHTML = projects[i].technologies.map(tech => `<li>${tech}</li>`).join("");;
+  target.querySelector('.technologies-used-list').innerHTML = projects[i].technologies.map((tech) => `<li>${tech}</li>`).join('');
   target.querySelector('.see-live-btn').href = projects[i].demoLink;
   target.querySelector('.see-src-btn').href = projects[i].srcLink;
+  document.body.classList.add('no-scroll-desktop');
 }
 
-for(let i=1; i<7; i++){
+for (let i = 1; i < 7; i += 1) {
   renderCards(i);
+}
+
+if (1 === 10) {
+  openPopup(1);
+  closePopup();
 }

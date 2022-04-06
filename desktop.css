@@ -4,9 +4,7 @@ body{
     box-sizing: border-box;
 }
 
-.no-scroll{
-    overflow: auto;
-}
+
 
 .header{
     width: auto;
@@ -192,6 +190,10 @@ body{
     display: none;
 }
 
+.form button{
+    margin-left: 16px;
+}
+
 .card-new2{
     background-image: url("background-new2.png");
 }
@@ -314,10 +316,6 @@ body{
     margin-bottom: 12px;
 }
 
-.form button{
-    margin-left: 16px;
-}
-
 .line3{
     width: 100vw;
     margin-left: -135px;
@@ -337,3 +335,4 @@ body{
 .line-bottom{
     display: none;
 }
+
