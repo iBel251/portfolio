@@ -91,7 +91,7 @@ const projects = [
     technologies: ['html', 'Bootstrap', 'Ruby on rails'],
     demoLink: '',
     srcLink: '',
-  }
+  },
 ];
 
 function renderCards(i) {
@@ -150,7 +150,6 @@ function openPopup(i) {
     target.querySelector('.modal-title').textContent = projects[i].name;
     target.querySelector('.modal-text').textContent = projects[i].description;
   }
-
 
   target.querySelector('.modal-img').src = projects[i].imageUrl;
   target.querySelector('.technologies-used-list').innerHTML = projects[i].technologies.map((tech) => `<li>${tech}</li>`).join('');
