@@ -337,6 +337,7 @@ body{
 }
 
 /* modal(popup) styling */
+
 .modal-container {
     width: 100vw;
     height: 100vh;
@@ -387,4 +388,72 @@ body{
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
+}
+
+.modal-title{
+    margin: 0;
+}
+
+.technologies-used-list{
+    display: flex;
+    padding: 0;
+    margin-bottom: 40px;
+}
+  
+.technologies-used-list li{
+    list-style-type: none;
+    border: 1px solid black;
+    padding: 10px;
+    margin-right: 10px;
+}
+  
+.modal-body{
+    display: flex;
+    height: 70%;
+    margin: 0;
+    padding: 0;
+}
+
+.modal-img-container{
+    max-width: 650px;
+    margin-right: 20px;
+}
+  
+.modal-img{
+    min-height: 455px;
+    min-width: 650px;
+    object-fit: cover;
+    margin: 0;
+}
+  
+.modal-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modal-text{
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+    margin-top: 24px;
+}
+  
+.modal-buttons{
+    margin-top: 24px;
+}
+  
+.modal-button{
+    background-color: #FF6B00;
+    padding: 10px;
+    color: white;
+    margin-right: 10px;
+    font-family: Inter,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
 }
