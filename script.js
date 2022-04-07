@@ -143,15 +143,15 @@ function closePopup() {
 function openPopup(i) {
   const target = document.querySelector('.modal-container');
   target.classList.add('active-modal');
-  if(window.innerWidth<600){
+  if (window.innerWidth < 600) {
     target.querySelector('.modal-title').textContent = projects[i].name2;
     target.querySelector('.modal-text').textContent = projects[i].description2;
-  }else{
+  } else {
     target.querySelector('.modal-title').textContent = projects[i].name;
     target.querySelector('.modal-text').textContent = projects[i].description;
   }
-  
-  
+
+
   target.querySelector('.modal-img').src = projects[i].imageUrl;
   target.querySelector('.technologies-used-list').innerHTML = projects[i].technologies.map((tech) => `<li>${tech}</li>`).join('');
   target.querySelector('.see-live-btn').href = projects[i].demoLink;
