@@ -1,10 +1,11 @@
 body{
   margin: 0;
   max-width: 100%;
+  box-sizing: border-box;
 }
 
-.no-scroll{
-  overflow: hidden;
+.no-scroll-desktop{
+  overflow:hidden;
 }
 
 a{
@@ -212,7 +213,6 @@ img:hover{
 .card{
   width: 327px;
   height: 386px;
-  background-image: url("card_background.png");
   background-size: contain;
   display: flex;
   flex-direction: column;
@@ -553,26 +553,33 @@ button:active{
 
 /* style dropdown menu (Activated on humbergur button pressd) */
 
-.open-menu{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  padding-top: 30px;
-  height: 100vh;
-}
+/* Only applicable for mobile version */
 
-.menu-btn.open .menu{
-  position: static;
-  background-image: url("closemenu.png");
-  background-size: contain;
-  height: 12px;
-  background-repeat: no-repeat; 
-  background-position: center; 
+@media only screen and (max-width: 600px) {
+  .no-scroll{
+    overflow: hidden;
   }
-
+  
+  .open-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    height: 100vh;
+  }
+  
+  .menu-btn.open .menu{
+    position: static;
+    background-image: url("closemenu.png");
+    background-size: contain;
+    height: 12px;
+    background-repeat: no-repeat; 
+    background-position: center; 
+  }
+  
   .open-menu .menu-btn{
     display: flex;
     justify-content: flex-end;
@@ -580,18 +587,18 @@ button:active{
     order: -1;
     padding-right: 30px;
   }
-
+  
   .open-menu .full-menu{
     display: flex;
     justify-content: center;
     margin: 0;
     padding: 0;
   }
-
+  
   .open-menu .logo{
     display: none;
   }
-
+  
   .open-menu li{
     border-bottom: 0.5px solid white;
     padding: 0;
@@ -599,7 +606,7 @@ button:active{
     width: 90%;
     list-style-type: none;
   }
-
+  
   .open-menu ul{
     display: flex;
     flex-direction: column;
@@ -608,17 +615,131 @@ button:active{
     padding: 0;
     width: 100%;
   }
-
+  
   .open-menu a{
     font-family: Inter, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  color: #FFF5E1;
-  margin-left: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #FFF5E1;
+    margin-left: 20px;
   }
-  
+    
   .open-menu ul :nth-child(4){
     display: none;
   }
+  
+}
+
+/* Style cards rendered from script.js */
+
+.card-new{
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+/* modal(popup) styling */
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  backdrop-filter: blur(0);
+}
+
+.modal-container.active-modal {
+  pointer-events: all;
+  transition: backdrop-filter 1s ease-in-out;
+  backdrop-filter: blur(5px) brightness(50%);
+}
+
+.modal {
+  pointer-events: all;
+  transition: transform 1s ease-out;
+  transform: translateY(-400vh);
+  width: 87.5vw;
+  padding: 5vw;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-container.active-modal .modal {
+  transform: translateY(0);
+}
+
+.close-modal{
+  position: absolute;
+  top: 38px;
+  right: 38px;
+  border: none;
+  background: white;
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.modal-header{
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 44px;
+  max-width: 80%;
+  color: #172B4D;
+}
+
+.technologies-used-list{
+  display: flex;
+  padding: 0;
+}
+
+.technologies-used-list li{
+  list-style-type: none;
+  border: 1px solid black;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.modal-img-container{
+  width: 100%;
+}
+
+.modal-img{
+  width: 100%;
+  max-height: 250px;
+  margin-top: 10px;
+}
+
+.modal-text{
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin-top: 24px;
+}
+
+.modal-buttons{
+  margin-top: 24px;
+}
+
+.modal-button{
+  background-color: #FF6B00;
+  padding: 10px;
+  color: white;
+  margin-right: 10px;
+  font-family: Inter,sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 17px;
+line-height: 24px;
+}
