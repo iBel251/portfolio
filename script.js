@@ -178,6 +178,36 @@ function submitform() {
   return true;
 }
 
+/* Store and fech forms data from local storage. */
+
+const email = document.getElementById('email-input');
+const fullName = document.getElementById('user-name');
+const comment = document.getElementById('user-message');
+function storageSave() {
+  const setData = {
+    name: fullName.value,
+    Email: email.value,
+    Comment: comment.value,
+  };
+  localStorage.setItem('StorageData', JSON.stringify(setData));
+}
+
+function getSave() {
+  const getData = JSON.parse(localStorage.getItem('StorageData'));
+  email.value = getData.Email;
+  fullName.value = getData.name;
+  comment.value = getData.Comment;
+}
+
+if (!localStorage.getItem('SavedData')) {
+  const SavedData = { name: '', Email: '', Comment: '' };
+  localStorage.setItem('SavedData', JSON.stringify(SavedData));
+} else {
+  getSave();
+}
+
+form.addEventListener('change', storageSave);
+
 if (1 === 10) {
   openPopup(1);
   closePopup();
