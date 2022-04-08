@@ -166,3 +166,21 @@ if (1 === 10) {
   openPopup(1);
   closePopup();
 }
+
+/* Form email validation */
+
+
+const form = document.querySelector('#contact-form');
+const message = document.querySelector('#error-message');
+
+function submitform() {
+  const email = document.getElementById('email-input').value;
+  if(email === email.toLowerCase()){
+    form.setAttribute('action', "https://formspree.io/f/meqnzyjg");
+    form.submit();
+  }else{
+    message.textContent = 'Email can\'t contain uppercase letters';
+    return false;
+  }
+  
+}
