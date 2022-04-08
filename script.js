@@ -183,17 +183,17 @@ function submitform() {
 const email = document.getElementById('email-input');
 const fullName = document.getElementById('user-name');
 const comment = document.getElementById('user-message');
-function localSave() {
+function storageSave() {
   const setData = {
     name: fullName.value,
     Email: email.value,
     Comment: comment.value,
   };
-  localStorage.setItem('SavedData', JSON.stringify(setData));
+  localStorage.setItem('StorageData', JSON.stringify(setData));
 }
 
 function getSave() {
-  const getData = JSON.parse(localStorage.getItem('SavedData'));
+  const getData = JSON.parse(localStorage.getItem('StorageData'));
   email.value = getData.Email;
   fullName.value = getData.name;
   comment.value = getData.Comment;
@@ -206,7 +206,7 @@ if (!localStorage.getItem('SavedData')) {
   getSave();
 }
 
-form.addEventListener('change', localSave);
+form.addEventListener('change', storageSave);
 
 if (1 === 10) {
   openPopup(1);
