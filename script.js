@@ -162,7 +162,24 @@ for (let i = 1; i < 7; i += 1) {
   renderCards(i);
 }
 
+/* Form email validation */
+
+const form = document.querySelector('#contact-form');
+const message = document.querySelector('#error-message');
+
+function submitform() {
+  const email = document.getElementById('email-input').value;
+  if (email !== email.toLowerCase()) {
+    message.textContent = 'Email can\'t contain uppercase letters';
+    return false;
+  }
+  form.setAttribute('action', 'https://formspree.io/f/meqnzyjg');
+  form.submit();
+  return true;
+}
+
 if (1 === 10) {
   openPopup(1);
   closePopup();
+  submitform();
 }

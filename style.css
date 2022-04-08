@@ -1,3 +1,7 @@
+html{
+  box-sizing: border-box;
+}
+
 body{
   margin: 0;
   max-width: 100%;
@@ -458,6 +462,7 @@ img:hover{
 
 .form li {
   margin-bottom: 39px;
+  width: 100%;
 }
 
 .form input {
@@ -469,7 +474,7 @@ img:hover{
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  width: 327px;
+  width: 87%;
   margin-left: 16px;
   padding-left: 15px;
 }
@@ -486,9 +491,9 @@ img:hover{
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  margin-left: 16px;
+  margin-left: 6px;
   height: 114px;
-  width: 300px;
+  width: 87%;
   padding-left: 15px;
   padding-top: 15px;
   transform: translate(10px);
@@ -511,6 +516,7 @@ img:hover{
   border: none;
   padding-left: 12px;
   transition: background-color 1000ms, color 1000ms;
+  margin-left: 15px;
 }
 
 .contact-icons{
@@ -549,6 +555,17 @@ button:hover{
 button:active{
   background-color: orange;
   color: black;
+}
+
+#error-message {
+  font-size: 12px;
+  color: red;
+  margin: 0 0 0 20px;
+  padding: 0;
+  visibility: auto;
+  order: 2;
+  text-align: left;
+  line-height: 15px;
 }
 
 /* style dropdown menu (Activated on humbergur button pressd) */
