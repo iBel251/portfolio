@@ -4,7 +4,7 @@ const navBtns = document.querySelectorAll('.full-menu a');
 
 menubtn.addEventListener('click', () => {
   menubtn.classList.toggle('open');
-  fullMenu.classList.toggle('open-menu');
+  fullMenu.classList.add('open-menu');
   document.body.classList.toggle('no-scroll');
 });
 
