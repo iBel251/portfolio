@@ -21,7 +21,7 @@ const projects = [
     id: 1,
     name: 'Multi-Post Stories',
     description:
-      "This is a microverse project to make a simple To-Do-List app that displays a list of tasks and allows you to add, remove and mark them completed to those tasks in the list.",
+      'This is a microverse project to make a simple To-Do-List app that displays a list of tasks and allows you to add, remove and mark them completed to those tasks in the list.',
     imageUrl: './images/img2.png',
     technologies: ['css', 'html', 'bootstrap', 'Ruby'],
     demoLink: 'https://ibel251.github.io/To-Do-List/',
