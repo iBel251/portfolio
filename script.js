@@ -3,15 +3,15 @@ const fullMenu = document.querySelector('.header');
 const navBtns = document.querySelectorAll('.full-menu a');
 
 menubtn.addEventListener('click', () => {
-  menubtn.classList.toggle('open');
-  fullMenu.classList.toggle('open-menu');
+  menubtn.classList.add('open');
+  fullMenu.classList.add('open-menu');
   document.body.classList.toggle('no-scroll');
 });
 
 for (let i = 0; i < 3; i += 1) {
   navBtns[i].addEventListener('click', () => {
-    menubtn.classList.toggle('open');
-    fullMenu.classList.toggle('open-menu');
+    menubtn.classList.add('open');
+    fullMenu.classList.add('open-menu');
     document.body.classList.toggle('no-scroll');
   });
 }
@@ -21,11 +21,11 @@ const projects = [
     id: 1,
     name: 'Multi-Post Stories',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    imageUrl: 'gymfit.png',
+      'This is a microverse project to make a simple To-Do-List app that displays a list of tasks and allows you to add, remove and mark them completed to those tasks in the list.',
+    imageUrl: './images/img2.png',
     technologies: ['css', 'html', 'bootstrap', 'Ruby'],
-    demoLink: '#',
-    srcLink: '#',
+    demoLink: 'https://ibel251.github.io/To-Do-List/',
+    srcLink: 'https://github.com/iBel251/To-Do-List',
   },
   {
     id: 2,
@@ -117,19 +117,18 @@ function renderCards(i) {
 function renderFirstCard() {
   const div = document.createElement('div');
   div.className = 'card1';
-  div.innerHTML = `<img src="gymfit.png" alt="">
+  div.innerHTML = `<img src="./images/img1.png" alt="">
   <h1>Multi-Post Stories</h1>
-  <p>A daily selection of privately personalized reads;
-    no accounts or sign-ups required. has been the industry's
-    standard dummy text ever since the 1500s,
-    when an unknown printer took a standard dummy text.</p>
+  <p>This is a microverse project to make a simple To-Do-List app 
+  that displays a list of tasks and allows you to add, remove and 
+  mark them completed to those tasks in the list.</p>
   <ul class="card1-btn">
     <li>css</li>
     <li>html</li>
     <li>bootstrap</li>
     <li>Ruby</li>
   </ul>
-  <button class="card1btn" onclick="openPopup(7)">See Project</button>
+  <button class="card1btn" onclick="openPopup(0)">See Project</button>
 `;
   document.querySelector('.works').appendChild(div);
 }
